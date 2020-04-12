@@ -1,1 +1,1 @@
-gem 'render_parent', '>= 0.0.4'
+#gem 'render_parent', '>= 0.0.4'
