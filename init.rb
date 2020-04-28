@@ -8,10 +8,10 @@ Redmine::Plugin.register :redmine_latex_mathjax do
   description 'Employ MathJax in all settings: wiki, issues, or every page.'
   url 'https://github.com/5inf/redmine_latex_mathjax'
   author_url 'https://github.com/5inf'
-  version '0.3.0'
+  version '0.4.0'
 
   settings :default => {
-    'latex_mathjax_url' => 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js',
+    'latex_mathjax_url' => '/plugin_assets/redmine_latex_mathjax/mathjax/tex-chtml.js',
     'latex_mathjax_inline_delimiter_start' => '$',
     'latex_mathjax_inline_delimiter_end' => '$',
     'latex_mathjax_block_delimiter_start' => '$$',
