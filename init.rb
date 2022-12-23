@@ -1,17 +1,17 @@
 require 'redmine'
 ::Rails.logger.info 'Redmine LaTeX MathJax Macro'
-require File.dirname(__FILE__) + '/lib/redmine_latex_mathjax/hooks/view_layouts_base_html_head_hook'
+require File.expand_path('../lib/redmine_latex_mathjax/hooks/view_layouts_base_html_head_hook', __FILE__)
 
 Redmine::Plugin.register :redmine_latex_mathjax do
   name 'Redmine LaTeX MathJax Macro'
-  author 'RVD, 5inf'
+  author 'RVD'
   description 'Employ MathJax in all settings: wiki, issues, or every page.'
-  url 'https://github.com/5inf/redmine_latex_mathjax'
-  author_url 'https://github.com/5inf'
-  version '0.4.0'
+  url 'https://github.com/process91/redmine_latex_mathjax'
+  author_url 'https://github.com/vDorst'
+  version '0.3.0'
 
   settings :default => {
-    'latex_mathjax_url' => '/plugin_assets/redmine_latex_mathjax/mathjax/es5/tex-chtml.js',
+    'latex_mathjax_url' => 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js',
     'latex_mathjax_inline_delimiter_start' => '$',
     'latex_mathjax_inline_delimiter_end' => '$',
     'latex_mathjax_block_delimiter_start' => '$$',
